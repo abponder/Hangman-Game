@@ -8,76 +8,65 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
     <link rel="icon" type="image/gif" href="assets/images/img_hangman.png" />
 
 
 </head>
 
-<div class="clockdate-wrapper">
-    <div id="clockdate">
-        <div id="clock"></div>
-        <div id="date"></div>
-    </div>
+
+
+<body>
+
+
+
+<h1>Hangnam Style!</h1>
+<button 
+type="button" 
+onClick="location.href=location.href">
+Reset
+</button>
+<hr>
+<div>
+    <h2><span id="demo0"><strong></strong></span></h2>
+    <h4><span id="demo8"><strong></strong></span></h4> 
+    <button 
+        type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click For time
+    </button>
+    <hr>
+    <h5><span id="demo"><strong>What time is it?</strong></span></h5>
+    <hr>
+
+    <h4><span id="demo1"><strong></strong></span></h4>
+    <p><span id="demo2"><strong></strong></span></p> 
+    <p><span id="demo3"><strong></strong></span></p> 
+    <p><span id="demo4"><strong></strong></span></p> 
+    <p><span id="demo5"><strong></strong></span></p> 
+    <p><span id="demo6"><strong></strong></span></p> 
+    <p><span id="demo7"><strong></strong></span></p> 
+    
+    <hr>
+    <h4><span id="demo9"><strong></strong></span></h4> 
+    <hr>
+    <p><span id="demo10"><strong></strong></span></p> 
+    <p><span id="demo11"><strong></strong></span></p> 
+    <h4><span id="demo12"><strong></strong></span></h4> 
+    <p><span id="demo13"><strong></strong></span></p> 
+    <p><span id="demo14"><strong></strong></span></p> 
+    <p><span id="demo15"><strong></strong></span></p> 
+    <hr>
+
+
 </div>
 
-<body onload="startTime()">
 
-<!-- header Area -->
-    <div class="jumbotron jumbotron-fluid jumbo1">
-        <div class="container-fluid  jumbo1">
-            <h1 class="display-4  jumbo1">Hangnam Style!</h1>
-            <h3 class= "display-4 text-primary">Psy's Favorite Foods</h3>
-        </div>
-    </div>
+  
 
 
-    <div class="container mt-2">
-        <div class="row">
-
-<!-- Left Column Start -->
-            <div class="col-md-5 bg-secondary border border-info m=4 p-4 h-100 d-inline-block">
-                <div class="row">
-                    <div class="col-md-12 text-white h4">What is it? ...
-                        <hr>
-                        <h2>You just typed <span id="demo0"><strong>...Nothing.</strong></span></h2>
-                        <p>random # between 1 and 9 (both included):  <span id="demo1"><strong>is null</strong></span></p>
-                        <p>random word from list:  <span id="demo2"><strong>is null</strong></span></p>
-
-
-                    </div>
-                </div>
-            </div>
-<!-- Left Column End -->
-
-<!-- Mid Column Start -->
-            <div class="col-md-1 bg-light"></div>
-<!-- Mid Column End -->
-
-<!-- Right Column Start -->
-            <div class="col-md-5 bg-secondary border border-info m=4 p-4 h-100 d-inline-block">
-                <div class="row">
-                    <div class="col-md-12 text-white h4">Press the Any key to Start!</div>
-                    <hr>
-                    <div class="col-md-12 text-white h4" id="game"></div>
-                </div>
-                <br>
-                <button type="button" onClick="location.href=location.href" class="btn btn-primary btn-sm">Reset</button>
-                <!-- <input type="button" value="Refresh Page" onClick="location.href=location.href" -->
-            </div>
-<!-- Right Column End -->
-
-        </div>
-    </div>
-
-
-    <footer class="footer fixed-bottom align-middle m-20 footercontainer">
-        <div class="container">
-            <span>Copyright &copy;</span>
-        </div>
-    </footer>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -9,7 +9,7 @@ var RemainingGuesses = 20;
 var misses = 0;
 var validGuess = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 var wordLetterCount = 0;
-
+var WordAnswerDashes = [];
 
 var words = ["Kimchi","Bibimbap","Bulgogo","Japchae","Hoeddeok",
                 "Ddukbokkie","Samgyeopsal","Chimaek","Tteokbokki"]
@@ -28,35 +28,6 @@ var words = ["Kimchi","Bibimbap","Bulgogo","Japchae","Hoeddeok",
       };
 
 
-      // VARIABLES
-      // ==========================================================================
-
-
-
-
-
-
-      // FUNCTIONS
-      // ==============================================================================
-
-            // get random number function
-                function randNbr() {
-                    "this is it" + Math.floor(Math.random() * words.length); // not with +1 like: var randNum = Math.floor(Math.random() * words.length) + 1;
-                }
-                    console.log (randNbr)
-            // get random word function
-              
-
-
-
-
-
-      // MAIN PROCESS
-      // ==============================================================================
-
-
-
-
 // Determine which key was pressed, make it lowercase, and set it to the userInput variable.
 //       var userInput = String.fromCharCode(event.which).toLowerCase();
 
@@ -73,14 +44,14 @@ var words = ["Kimchi","Bibimbap","Bulgogo","Japchae","Hoeddeok",
         var computerGuess = words[randNum];
 
     // Set up the answer array
-        var WordAnswerDashes = [];
-        for (var i = 0; i < computerGuess.length; i++) {
-            WordAnswerDashes[i] = "_";
-        }
-        var LettersToGuess = computerGuess.length;
+    var WordAnswerDashes = [];
+    for (var i = 0; i < computerGuess.length; i++) {
+        WordAnswerDashes[i] = "_";
+    }
+    var LettersToGuess = computerGuess.length;
 
-            console.log(LettersToGuess);
-            console.log(WordAnswerDashes);
+        console.log(LettersToGuess);
+        console.log(WordAnswerDashes);
 
     // send output to html id tags NOT PART OF FINAL VERSION!
     document.getElementById("demo0").innerHTML = userGuess;
@@ -101,19 +72,9 @@ var words = ["Kimchi","Bibimbap","Bulgogo","Japchae","Hoeddeok",
   
           // Set the inner HTML contents of the #game div to our html string
           document.querySelector("#game").innerHTML = html;
+
+  
 };
-
-
-
-
-
-
-
-
-
-
-
-
 
   
 // Start Clock Function
